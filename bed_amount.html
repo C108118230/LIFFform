@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" nonce="">
+    <link rel="stylesheet" href="/static/macros/client/css/1533892223-mae_html_css_ltr.css">
+    <script type="text/javascript" src="/static/macros/client/js/2802729168-warden_bin_i18n_warden__zh_tw.js"
+        nonce=""></script>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        @import url(https://fonts.googleapis.com/css2?family=Cookie&display=swap);
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        /* 水平置中 */
+        .section-h-middle {
+            width: 50%;
+            height: 240px;
+            margin: 10px auto;
+
+            /* 好看用 */
+            /* border: 1px solid rgb(255, 255, 255); */
+        }
+
+        button {
+            border: 0;
+            background-color: #387eee;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        #title {
+            /* font-family:'cwTeXYen', DFKai-sb; */
+            font-family: 'cwTeXYen', sans-serif;
+            line-height: 2;
+            font-size: 50px;
+            font-weight: 550;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border: 1px solid rgba(255, 0, 0, 0);
+            background-color: #800000;
+        }
+
+        htm1,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            /* background:linear-gradient(45deg, #49a09d, #5f2c82); */
+            /* background-image: url( ' https://img-qn.51miz.com/preview/element/00/01/11/67/E-1116704-B376C28A.jpg ' ); */
+            background-image: url(' https://img.freepik.com/free-vector/dna-biotechnology-science-background-vector-blue-futuristic-style-with-blank-space_53876-114112.jpg?w=1380&t=st=1647444697~exp=1647445297~hmac=7ba72f426cde374a985a462fc2515ad85298fd2464ca4094c1b53573dd339c52 ');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: sans-sarif;
+            font-weight: 100;
+        }
+
+        .container {
+            /* background-color: #fff; */
+            background-color: rgba(255, 255, 255, 0.7);
+            position: absolute;
+            border-radius: 25px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 500px;
+            padding: EdgeInsets.all(10.0)
+        }
+
+        div {
+            font-family: 'cwTeXYen', sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        option {
+            font-family: 'cwTeXYen', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        button {
+            font-family: 'cwTeXYen', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        select {
+            /*移除箭頭樣式*/
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+
+            /*改變右邊箭頭樣式*/
+            background: url("arrow.png") no-repeat right center transparent;
+            font-family: 'cwTeXYen', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            border: 0px;
+            width: 100%;
+            height: 34px;
+            padding-left: 2px;
+            padding-right: 40px;
+            background-color: #F6F7F7;
+            color: gray;
+        }
+
+        @font-face {
+            font-family: 'cwTeXYen';
+            src: url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+        }
+    </style>
+
+    <style class="redeviation-bs-style" data-name="content">
+        /*! (c) Philipp König under GPL-3.0 */
+        body>div#redeviation-bs-indicator>div {
+            opacity: 0;
+            pointer-events: none
+        }
+
+        body>iframe#redeviation-bs-sidebar.redeviation-bs-visible,
+        body>iframe#redeviation-bs-overlay.redeviation-bs-visible {
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        body.redeviation-bs-noscroll {
+            overflow: hidden !important
+        }
+
+        body>div#redeviation-bs-indicator>div {
+            position: absolute;
+            transform: translate3d(-24px, 0, 0);
+            top: 0;
+            left: 0;
+            width: 24px !important;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 0 10px 10px 0;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 2
+        }
+
+        body>div#redeviation-bs-indicator>div>span {
+            -webkit-mask: no-repeat center/24px;
+            -webkit-mask-image: url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);
+            background-color: #ffffff;
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        body>div#redeviation-bs-indicator[data-pos='right'] {
+            left: auto;
+            right: 0
+        }
+
+        body>div#redeviation-bs-indicator[data-pos='right']>div {
+            transform: translate3d(24px, 0, 0);
+            left: auto;
+            right: 0;
+            border-radius: 10px 0 0 10px
+        }
+
+        body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div {
+            border-radius: 0
+        }
+
+        body>div#redeviation-bs-indicator.redeviation-bs-hover>div {
+            transform: translate3d(0, 0, 0);
+            opacity: 1
+        }
+
+        body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb {
+            height: 100% !important;
+            top: 0 !important
+        }
+
+        body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div {
+            background: transparent
+        }
+
+        body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span {
+            -webkit-mask-position-y: 20px
+        }
+
+        body>iframe#redeviation-bs-sidebar {
+            width: 350px;
+            max-width: none;
+            height: 0;
+            z-index: 2147483646;
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            color-scheme: normal !important;
+            speak: none;
+            border: none;
+            display: block !important;
+            transform: translate3d(-350px, 0, 0);
+            transition: width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s
+        }
+
+        body>iframe#redeviation-bs-sidebar[data-pos='right'] {
+            left: auto;
+            right: 0;
+            transform: translate3d(350px, 0, 0)
+        }
+
+        body>iframe#redeviation-bs-sidebar.redeviation-bs-visible {
+            width: calc(100% + 350px);
+            height: 100%;
+            transform: translate3d(0, 0, 0);
+            transition: opacity 0.3s, transform 0.3s
+        }
+
+        body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask {
+            background: none !important
+        }
+
+        body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover) {
+            width: calc(350px + 50px)
+        }
+
+        body>iframe#redeviation-bs-overlay {
+            width: 100%;
+            max-width: none;
+            height: 100%;
+            z-index: 2147483647;
+            border: none;
+            speak: none;
+            background: rgba(0, 0, 0, 0.5) !important;
+            transition: opacity 0.3s
+        }
+    </style>
+
+    <!--下面那行是網頁的編碼-->
+    <!-- viewport中文為 視口 -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="LIN" />
+    <meta name="author" content="LIN" />
+    <meta name="keyword" content="LIN" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>病床查詢系統</title>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <!-- <a href="#news">News</a>
+        <a href="#contact">Contact</a> -->
+        <a href="#about">About</a>
+    </div>
+    <!-- <h1 align="center">病床數量查詢系統</h1>
+    <h2 align="center">請輸入查詢資料</h2> -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <h1 id="title" align="center" class="text-primary text-center">病床數輛查詢系統</h1>
+                <!-- <div align="center" style="font-size:28px;" class="text-primary text-center">請選擇查詢資料</div> -->
+                <div align="center" style="font-size:35px">請選擇查詢資料</div>
+                <!-- <form action="https://script.google.com/macros/s/AKfycbxq11gO5EQl4HH8qLxcoR-hiXVo7VOrePFXV6CR5KoxHy3ERaNfwm2bK-UHnSL1bUe3/exec" class="login-form mt-2" method="post"> -->
+                <div align="center" class="section-h-middle">
+
+                    <div class="form-group">
+                        <form method="POST" action="form.php">
+                            <br>
+                            <div for="classNum">所選擇醫院縣市</div>
+                            <!-- <input type="text" class="form-classNum form-control" placeholder="please enter" name="classNum"> -->
+                            <select name="HN" id="HN">
+                                <option value="">請選擇醫院</option>
+                                <option value="長庚">長庚醫療財團法人高雄長庚紀念醫院</option>
+                                <option value="高醫">高雄醫學大學附設中和紀念醫院</option>
+                                <option value="義大">義大醫療財團法人義大醫院</option>
+                                <option value="國軍">國軍高雄總醫院</option>
+                                <option value="海總">國軍高雄總醫院左營分院</option>
+                                <option value="市聯">高雄市立聯合醫院</option>
+                                <option value="港醫">高雄市立小港醫院</option>
+                            </select>
+                            <br>
+                        </form>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="seatNum">所在地區</label>
+                        <!-- <input type="text" class="form-seatNum form-control" placeholder="please enter" name="seatNum"> -->
+                        <select>
+                            <option>請選擇地區</option>
+                            <option>高雄市</option>
+                        </select>
+                    </div><br>
+
+                    <button type="submit" class="btn btn-primary" style="width:150px;height:50px"
+                        onclick="location.href='bed.php'">送出查詢</button>
+                </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script>
+        $(document).ready(function () {
+            const liffId = "1657095488-lpzgkkXp";
+            initializeLiff(liffId);
+        })
+
+        function initializeLiff(liffId) {
+            liff.init({
+                liffId: liffId
+            }).then(() => {
+                initializeApp();
+            }).catch((err) => {
+                console.log('LIFF Initialization failed ', err);
+            });
+        }
+    </script>
+</body>
+
+</html>
