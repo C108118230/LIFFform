@@ -1,5 +1,5 @@
 <?php
-include("connect.php");
+include("https://github.com/C108118230/LIFFform/blob/9b379a41c21df77766487301dd55b3c6a3d723ff/connect.php");
 ?>
 <!DOCTYPE html>
 <title>義大醫院病床</title>
